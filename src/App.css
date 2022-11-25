@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171819;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.button {
+  position: relative;
+  width: 140px;
+  height: 50px;
+  background: #4b4b4b;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+.button:hover {
+  background: linear-gradient(
+    45deg,
+    #ff0077,
+    #2d76ff,
+    #3cd421,
+    #e7d219,
+    #ff0077
+  );
+  background-size: 400%;
+  z-index: 1;
+  animation: glow 8s linear infinite;
+  -webkit-animation: glow 8s linear infinite;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  -webkit-filter: blur(20px);
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+
+.button:hover::before {
+  opacity: 1;
+  z-index: -1;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.backgroundMenuMobile {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.shadowItemMenu {
+  box-shadow: 3px 0px 20px 0.4px #ffae00;
+}
