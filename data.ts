@@ -1,27 +1,181 @@
-export const productsData = [
+import productApp from './src/assets/img portfolio/ProductsApp.png'
+import ClothingApp from './src/assets/img portfolio/ClothingApp.png'
+import coinApp from './src/assets/img portfolio//coinApp.png'
+import ExpenseTracker from './src/assets/img portfolio/ExpenseTracker.png'
+import formik from './src/assets/img portfolio/formik.png'
+import inventoryApp from './src/assets/img portfolio/inventoryApp.png'
+import shop from './src/assets/img portfolio/shop.png'
+import todoList from './src/assets/img portfolio/todoList.png'
+
+export const menuItem = [
   {
-    id: '1',
+    id: 1,
     title: 'HOME',
     link: '/',
   },
   {
-    id: '2',
+    id: 2,
     title: 'ABOUT',
     link: '/about',
   },
   {
-    id: '3',
+    id: 3,
     title: 'SKILLS',
     link: '/skills',
   },
   {
-    id: '4',
-    title: 'PORTFOLIO',
-    link: '/portfolio',
-  },
-  {
-    id: '5',
+    id: 4,
     title: 'CONTACT',
     link: '/contact',
-  }
-];
+  },
+]
+
+export const portfolioData = [
+  {
+    id: 1,
+    title: 'Product',
+    img: productApp,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'scss',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "Redux-toolkit",
+      "react-router-dom",
+      "tailwind",
+      "Axios",
+      "Webpack",
+      "Babel",
+    ],
+    description:"This program is a project where the user can see and like products by going to the likes section and viewing the liked products.It can also search for products or filter based on category and price.The user can go to the category section and select the desired category to see the products related to that category, and can also click on the product to view the complete product information and images.On this site, the user has the ability to register and view his information in the profile section, and he can log out of his account,and change the theme of the app. This project has been implemented in a responsive design.",
+    linkLiveApp:"https://products-app-amir.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/ProductsApp",
+  },
+  {
+    id: 2,
+    title: 'Coin',
+    img: coinApp,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'tailwind',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "Redux-toolkit",
+      "react-router-dom",
+      "react-icon",
+      "moment",
+      "apex-chart",
+      "tailwind",
+      "Axios",
+      "Webpack",
+      "Babel",
+    ],
+    description:"In this program, the user can view digital currencies, price, price change percentage and its symbol. Also, by clicking on the currency chart, you can see the price changes in the last 7 days. This project has been implemented in a responsive design",
+    linkLiveApp:"https://coins-omega.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/Coins",
+  },
+  {
+    id: 3,
+    title: 'Clothing',
+    img: ClothingApp,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'tailwind',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "react-router-dom",
+      "Redux-toolkit",
+      "tailwind",
+    ],
+    description:"This app is a project which user can see some products, add products to cart also manage cart . This project has been implemented in a responsive design",
+    linkLiveApp:"https://clothing-app-amir.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/clothing-App",
+  },
+  {
+    id: 4,
+    title: 'Shop',
+    img: shop,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'tailwind',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "Context",
+      "tailwind",
+      "react-router-dom",
+      "Formik",
+      "Yup",
+    ],
+    description:"This app is a project which user can see some products, sign up, login and add products to cart also manage cart . This project has been implemented in a responsive design.",
+    linkLiveApp:"https://shop-amir.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/Shop",
+  },
+  {
+    id: 5,
+    title: 'Inventory',
+    img: inventoryApp,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'tailwind',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "tailwind",
+    ],
+    description:"This app is a project which user can Add category (with description) and add a product with selected category and number , possibility to search on products , sort by category and sort by date as well as the possibility of removing products . This project has been implemented in a responsive design.",
+    linkLiveApp:"https://inventory-app-lyart.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/inventory-App",
+  },
+  {
+    id: 6,
+    title: 'Formik',
+    img: formik,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'css',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "Formik",
+      "Yup",
+    ],
+    description:"This app is an exercise project which implement Formik React. Implement by HTML, CSS and React.js . In this project I used Formik to better validation and handling submission. This project has been implemented in a responsive design.",
+    linkLiveApp:"https://formik-theta.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/Formik",
+  },
+  {
+    id: 7,
+    title: 'Expense Tracker',
+    img: ExpenseTracker,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'css',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+    ],
+    description:"This app is a project which allows you to monitor and categorize your expenses . This project has been implemented in a responsive design.",
+    linkLiveApp:"https://expense-tracker-tan-five.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/Expense-tracker",
+  },
+  {
+    id: 8,
+    title: 'TodoList',
+    img: todoList,
+    ApplicationFramework: 'react',
+    FrameworkStyles: 'css',
+    allLibraryAndFramework:[
+      "React",
+      "HTML",
+      "Css",
+      "react-select",
+    ],
+    description:"This app is a project you can add some your daily work and manage it .  In this project I used React select to better control on select element and implemented search and filter component. This project has been implemented in a responsive design.",
+    linkLiveApp:"https://todolist-ten-brown.vercel.app/",
+    linkGithub:"https://github.com/orgamiryazdani/TodoList",
+  },
+]

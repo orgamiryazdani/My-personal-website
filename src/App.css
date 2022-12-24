@@ -1,3 +1,7 @@
+.fontfamily{
+  font-family: "NexaRustHandmade" !important;
+
+}
 body {
   display: flex;
   align-items: center;
@@ -10,9 +14,20 @@ body {
 * {
   font-family: sans-serif;
   box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+  
+}
+
+@font-face {
+  font-family: "NexaRustHandmade"; /*Can be any text*/
+  src: local("NexaRustHandmade"), url("./fonts/NexaRustSlab-Trial-Black3.woff2") format("woff2");
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 140px;
   height: 50px;
@@ -22,11 +37,11 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 18px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
 }
 
 .button:hover {
@@ -54,11 +69,11 @@ body {
   filter: blur(20px);
   opacity: 0;
   transition: opacity 0.5s;
-  border-radius: 18px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
   -webkit-filter: blur(20px);
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
@@ -80,6 +95,12 @@ body {
   }
 }
 
+.bgPortfolioItem {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
 .backgroundMenuMobile {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(100px);
@@ -88,4 +109,85 @@ body {
 
 .shadowItemMenu {
   box-shadow: 3px 0px 20px 0.4px #ffae00;
+}
+
+.animationDownIconHomePage {
+  animation: animationDownName 1s linear infinite;
+  -webkit-animation: animationDownName 1s linear infinite;
+}
+
+@keyframes animationDownName {
+  0% {
+    margin-bottom: 50px;
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+    margin-bottom: 40px;
+  }
+  50% {
+    opacity: 0.6;
+    margin-bottom: 30px;
+  }
+  70% {
+    opacity: 0.4;
+    margin-bottom: 20px;
+  }
+  85% {
+    opacity: 0.2;
+    margin-bottom: 10px;
+  }
+  100% {
+    opacity: 0;
+    margin-bottom: 0px;
+  }
+}
+
+.typoGraphy {
+  width: 0%;
+  height: 65px;
+  overflow: hidden;
+  animation: typing 1.5s forwards;
+  -webkit-animation: typing 1.5s forwards;
+}
+
+@keyframes typing {
+  100% {
+    width: 100%;
+  }
+}
+
+.bgSkill {
+  background: linear-gradient(
+    to right,
+    #fae8e8 0%,
+    3.57142873108387%,
+    #f8e9e9 7.14285746216774%,
+    11.90476231276989%,
+    #f8eae9 16.66666716337204%,
+    19.0476194024086%,
+    #f7ebea 21.42857164144516%,
+    22.0238097012043%,
+    #f7ebea 22.61904776096344%,
+    27.97619104385376%,
+    #f5ecea 33.33333432674408%,
+    36.30952388048172%,
+    #f5edeb 39.28571343421936%,
+    42.8571417927742%,
+    #f3eeeb 46.42857015132904%,
+    48.21428507566452%,
+    #f3eeec 50%,
+    57.73809552192688%,
+    #f0eeed 65.47619104385376%,
+    67.85714328289032%,
+    #f0f0ee 70.23809552192688%,
+    74.4047611951828%,
+    #eef1ee 78.57142686843872%,
+    79.76190447807312%,
+    #eef1ef 80.95238208770752%,
+    88.6904776096344%,
+    #edf2ef 96.42857313156128%,
+    98.21428656578064%,
+    #edf2f0 100%
+  );
 }
